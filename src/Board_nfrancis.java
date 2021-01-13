@@ -39,7 +39,7 @@ public class Board_nfrancis extends JPanel {
 		try {                
 	          image = ImageIO.read(new File("tetrislogo.jpg"));
 	          image2 = ImageIO.read(new File("gameOwer.jpg"));
-	          paused = ImageIO.read(new File("pawsd.jpg"));
+	          paused = ImageIO.read(new File("pause1.jpg"));
 	       } catch (IOException ex) {
 	       }
 		for(int x = 0; x < NUM_COLS; x++) {
@@ -68,17 +68,17 @@ public class Board_nfrancis extends JPanel {
 		g.drawString("" + tetris.score, 650, 300);
         g.drawString("TIME:", 580, 350);
         g.drawString("" + tetris.timestep, 650, 350);
-		g.drawString("Next", 258, 220);
-		g.drawString("Block:", 254, 240);
-		g.drawString("Controls", 780, 220);
-		g.drawString("W or UP - Rotate", 780, 240);
-		g.drawString("A/D or Left/Right - Move", 780, 260);
-		g.drawString("T/G - Timescale", 780, 280);
-		g.drawString("S or Down - Slow Drop", 780, 300);
-		g.drawString("Space - Fast Drop", 780, 320);
-		g.drawString("N - New Game", 780, 340);
-		g.drawString("P - Pause", 780, 360);
-		g.drawString("O - Unpause", 780, 380);
+		g.drawString("Sonraki", 258, 220);
+		g.drawString("Blok:", 254, 240);
+		g.drawString("Kontroller", 780, 220);
+		g.drawString("W or UP - Döndür", 780, 240);
+		g.drawString("A/D or Left/Right - Yön", 780, 260);
+		g.drawString("T/G - Zaman Tutucu", 780, 280);
+		g.drawString("S or Down - Hızlı Düşüş", 780, 300);
+		g.drawString("Space -  Sert İndir", 780, 320);
+		g.drawString("N - Yeni Oyun", 780, 340);
+		g.drawString("P - Duraklat", 780, 360);
+		g.drawString("O - Devam", 780, 380);
 		g.drawLine(780, 221, 827, 221);
 		// Box around score/time
 		g.drawLine(560, 270, 700, 270);
